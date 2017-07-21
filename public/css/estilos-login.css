@@ -1,0 +1,62 @@
+body, html {
+    height: 100%;
+    background-color: rgb(104, 145, 162);
+}
+
+.card-container {
+    max-width: 350px;
+    padding: 40px 40px;
+}
+
+.card {
+    background-color: #FFFFFF;
+    padding: 20px 25px 30px;
+    margin: 0 auto 25px;
+    margin-top: 10%;
+    border-radius: 10%;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.8);
+}
+
+.inner-addon { position: relative; }
+
+.inner-addon .fa{
+	padding: 11px;
+	pointer-events: none;
+	position: absolute;
+}
+
+.left-addon input { padding-left: 50px; }
+.left-addon .fa { left:  0px; }
+
+.center{
+  text-align: center;
+}
+
+.profile-img-card {
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.card-inicial{
+    position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #E5E4E4;
+    border-radius: 0px 0px 53px 51px;
+    border: 1px solid #000000;
+    margin-top: 20%;
+    margin-left: 35%;
+}
+
