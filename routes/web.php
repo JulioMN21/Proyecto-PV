@@ -65,16 +65,6 @@ Route::group(['middleware' => 'Admin'], function(){
   Route::get('/eliminarFamilia/{id}', 'FamiliasController@eliminarFamilia');
   Route::get('/componentes/familias/familiasPDF', 'FamiliasController@familiasPDF');
   Route::get('/componentes/familias/familiasDetalladoPDF', 'FamiliasController@familiasDetalladoPDF');
-  //PRODUCTOS
-  Route::get('/componentes/productos/registrar', 'ProductosController@registrarProductos');
-  Route::get('/componentes/productos/pProductos', 'ProductosController@index');
-  Route::get('/componentes/productos/consultar', 'ProductosController@consultarProductos');
-  Route::post('/guardarProducto', 'ProductosController@guardarProducto');
-  Route::post('/actualizarProducto/{id}', 'ProductosController@actualizarProducto');
-  Route::get('/eliminarProducto/{id}', 'ProductosController@eliminarProducto');
-  Route::get('/editarProducto/{id}', 'ProductosController@editarProducto');
-  Route::get('/componentes/productos/productosPDF', 'ProductosController@productosPDF');
-  Route::get('/componentes/productos/productosDetalladoPDF', 'ProductosController@productosDetalladoPDF');
-  Route::get('/componentes/productos/productosUserPDF', 'ProductosController@productosUserPDF');
+  
 });
 });
