@@ -26,12 +26,12 @@ class HomeController extends Controller
      */
     public function index()
     {
-
+        $clientes=Cliente::all();
 
          if (Auth()->user()->role_id == 1){
               return view('componentes.administrador.index');
          }  else{
-             return view('/home');
+             return view('componentes.index',compact('clientes'));
          }
             
           

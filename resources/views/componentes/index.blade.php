@@ -1,10 +1,21 @@
-@extends('layouts.app') @section('content')
+@extends('layouts.app3') @section('content')
+<div class="card card-block">
+ <script src="{{ asset("js/pventa.js") }}"></script>
 <section class="contenedor">
 
   <div class="row">
     <article class="col-8">
       <div class="card card-block" style="margin-top:1%; margin-left:1%; border:1px solid;">
         <form class="form-inline" action="" method="POST">
+          <!-- <input type="hidden" name="_token" value="{{ csrf_token()}}">
+          <label class="col-lg-4" for="codigo">
+            <strong> Codigo de producto:</strong>
+           </label>
+          <input type="text" name="" class="col-lg-5 form-control" value="">
+          <button type="button" class="btn btn-success col-lg-2 " name="button" style="margin-left:15px;">Agregar</button> -->
+
+
+
           <input type="hidden" name="_token" value="{{ csrf_token() }}">
             <input type="hidden" id="idUsuario" name="idUsuario" value="{{ Auth::user()->id }}">
             <label class="col-lg-4" for="codigo">
@@ -35,10 +46,16 @@
                 <th>Precio venta</th>
                 <th>Cantidad</th>
                 <th>Importe</th>
-                <th>Existencia</th>
               </tr>
             </thead>
             <tbody>
+              <tr>
+                <th></th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
             </tbody>
           </table>
         </article>
@@ -46,28 +63,29 @@
     </article>
     <div class="row">
       <div class="col-sm-12">
-        <section style="margin-top:4%;">
+        <section style="margin-top:2%;">
           <label class="col-md-3 control-label" for="clientes"><strong>Cliente:</strong></label>
           <article>
             <select name="clientes" id="clientes" class="form-control" required>
-          <option value="1"  selected > Publico General </option>
-          @foreach($clientes as $c)
+              
+          <option value=""  selected >Seleccione un Cliente </option>
+        @foreach($clientes as $c)
             @if(($c->status)==1)
-  			<option value="{{ $c->id }}" style="font-size:20px; ">  {{$c->vc_nombre}}</option>
+        <option value="{{ $c->id }}" style="font-size:20px; ">  {{$c->vc_nombre}} </option>
         @endif
-  			@endforeach
+        @endforeach
           </select>
           </article>
  
         </section>
       </div>
-      <div class="col-sm-12" style="margin-top:10%;">
+      <div class="center" style="margin-top:10%;">
         <section class>
-          <label class=" control-label" for="clientes"><strong>TOTAL</label>
+          <label class=" control-label" for="clientes"><strong><H2>TOTAL</H2></label>
           <p id="lblTotal" style="font-size:60px;color:red;">$0.00</p>
         </section>
         <article>
-          <div style="margin-top:50%;">
+          <div style="margin-top:10%;">
             <h3 class="card-title"><strong>OPCIONES</strong></h3>
             <div class="card-group">
               <div class="card">
@@ -84,15 +102,16 @@
                 </div>
               </div>
             </div>
+          </div>
         </article>
         </div>
       </div>
     </div>
 </section>
+</div>
 
-
+@yield('other-scripts', '')
 @endsection
 
-@section('other-scripts')
-  <script src="{{ asset('js/pventa.js') }}"></script>
-@endsection
+
+ 

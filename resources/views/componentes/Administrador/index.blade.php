@@ -1,3 +1,4 @@
+
 @extends('layouts.app') @section('content')
 <div class=" card card-block">
     <header>
@@ -6,8 +7,8 @@
                 <div class="col-lg-12">
                     <img class="img-responsive" src="{{ asset('img/img2.png') }}" alt="">
                     <div class="intro-text">
-                        <h1 class="center">Pantalla de Administrador</h1>
-                           <h1 class="center">Sistema web de punto de venta...</h1>
+                        <h1 class="center">Pantalla Pricipal de Administrador</h1>
+                           <h1 class="center">Sistema web de punto de venta.</h1>
                         <hr class="star-light">
                         <span class="skills">Información De los representantes, y la Insitición</span>
                     </div>
@@ -51,7 +52,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Copyright &copy; Punto de venta web
+                        <br>  <h4>Copyright &copy; Punto de venta web </h4> 
                     </div>
                 </div>
             </div>

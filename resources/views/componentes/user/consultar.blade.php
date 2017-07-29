@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="card-consulta">
+<div class="card card-block">
 	<div class="titulo">
 			<strong class="titulo">Consulta de Usuarios</strong>
 				<hr style="border-top: 3px double black;">

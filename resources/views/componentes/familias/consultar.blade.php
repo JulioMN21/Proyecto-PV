@@ -16,6 +16,12 @@
 						<i class="fa fa-user-plus fa-lg" aria-hidden="true"></i>
 						<span class="btnNuevo" >Nuevo</span>
 					</a>
+
+	              <a type="button" class="btn btn-primary" href="{{url('/componentes/familias/familiasPDF')}}">
+						<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+						<span class="btnNuevo" >PDF</span>
+					</a>
+
 			</article>
 		</section>
 		<article class="table-responsive ">

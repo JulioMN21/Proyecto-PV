@@ -9,7 +9,7 @@
 
      <header class="clearfix">
       <div id="logo">
-          <img src="{{asset('img/favicon.png')}}">
+          <img src="{{asset('img/favicon1.png')}}">
       </div>
     <div id="client" class="derecha">
           <div class="to">Punto de Venta</div>

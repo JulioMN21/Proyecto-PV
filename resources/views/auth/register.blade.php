@@ -49,7 +49,7 @@
                             <label for="email" class="col-md-4 control-label"><strong>Correo electronico</strong></label>
 
                             <div class="col-md-12">
-                                <input id="email" type="email" class="form-control" name="email" placeholder="Ej. Correo@dominio.com" value="{{ old('email') }}" required>
+                                <input id="email" type="email" class="form-control" name="email" placeholder="Ej. Correo@ejemplo.com" value="{{ old('email') }}" required>
 
                                 @if ($errors->has('email'))
                                     <span class="help-block">

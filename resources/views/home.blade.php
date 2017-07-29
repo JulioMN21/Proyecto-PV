@@ -1,7 +1,5 @@
 
-
-
- @extends('layouts.app') @section('content')
+@extends('layouts.app3') @section('content')
 <div class=" card card-consulta">
 
     <header>

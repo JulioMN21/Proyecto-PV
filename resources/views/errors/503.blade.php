@@ -1,5 +1,5 @@
 @extends('layouts.app') @section('content')
-<link rel="stylesheet" href="{{asset('css/freelancer.min.css')}}">
+
     <header>
         <div class="container" id="maincontent" tabindex="-1">
             <div class="row">
